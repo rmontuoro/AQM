@@ -162,8 +162,9 @@ contains
       ELSE
         IOUNIT = JUNIT()
         OPEN(UNIT=IOUNIT, FILE='/dev/null', IOSTAT=IOS, ACTION='WRITE')
-        IF (IOS == 0) INIT3 = IOUNIT
+        IF (IOS /= 0) IOUNIT = DEFAULT_LOGDEV
       END IF
+      INIT3 = IOUNIT
     END IF
   END FUNCTION INIT3
 
