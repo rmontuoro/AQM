@@ -88,7 +88,6 @@ set(localCCTM "src/model/src")
 list(APPEND aqm_CCTM_files
 	${AERO}/AERO_DATA.F
 	${AERO}/aero_driver.F
-	${AERO}/AERO_EMIS.F
 	${AERO}/AEROMET_DATA.F
 	${AERO}/AEROSOL_CHEMISTRY.F
 	${AERO}/aero_subs.F
@@ -235,4 +234,5 @@ list(APPEND aqm_CCTM_files
 	${localCCTM}/CSQY_DATA.F
 	${localCCTM}/isocom.f
 	${localCCTM}/aero_depv.F
+	${localCCTM}/AERO_EMIS.F
 )
